@@ -17,7 +17,7 @@
 </head>
 <body class="bg-black text-slate-300 min-h-screen flex flex-col antialiased">
 
-<!-- Header / Navigation -->
+    <!-- Header / Navigation -->
     <header class="bg-[#0a0a0a] border-b border-zinc-950 sticky top-0 z-50">
         <!-- Centered flex container to keep everything aligned horizontally together in the middle -->
         <div class="max-w-7xl mx-auto flex justify-center items-center h-20 px-4 sm:px-6 relative">
@@ -47,32 +47,31 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" /></svg>
             </div>
         </div>
-    </header>    <!-- Hero Section -->
+    </header>
+
     <!-- Hero Section -->
-<section id="home" class="relative h-[80vh] min-h-[580px] bg-cover bg-center flex flex-col justify-between" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('hero-bg.jpg');">
+    <section id="home" class="relative min-h-[90vh] bg-cover bg-center flex flex-col justify-between" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('hero-bg.jpg');">
         
         <!-- Hero Middle Main Content -->
-        <div class="flex-grow flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto mt-12">
+        <div class="flex-grow flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto mt-12 w-full">
             <h2 class="heading-font text-4xl sm:text-6xl font-bold tracking-wider text-white uppercase mb-4">
                 PAIISE 
-            
-<p>
-<span class="text-blue-600">PRAISE JAM</span>
-</p>
-</h2>
+                <p><span class="text-blue-600">PRAISE JAM</span></p>
+            </h2>
             <p class="text-zinc-300 font-light max-w-2xl text-xs sm:text-sm tracking-widest uppercase mb-1 leading-relaxed">
-              EVERY PAUSE HAS A PURPOSE.
+                EVERY PAUSE HAS A PURPOSE.
             </p>
             <p class="text-zinc-300 font-light max-w-2xl text-xs sm:text-sm tracking-widest uppercase mb-10 leading-relaxed">
-             MAKE ROOM FOR PRAISE.
+                MAKE ROOM FOR PRAISE.
             </p>
             <p class="text-zinc-300 font-light max-w-2xl text-xs sm:text-sm tracking-widest uppercase mb-10 leading-relaxed">
-		"He will quiet you with His love..." Zephaniah 3:17
+                "He will quiet you with His love..." Zephaniah 3:17
             </p>
-            <p class="text-zinc-300 font-bold max-w-2xl text-xs sm:text-sm tracking-widest uppercase mb-1 leading-relaxed">
-		August 22, 2026
+            <p class="text-zinc-300 font-bold max-w-2xl text-xs sm:text-sm tracking-widest uppercase mb-4 leading-relaxed">
+                August 22, 2026
             </p>
-		<!-- Grid Countdown Timer Elements (Days, Hours, Minutes) -->
+
+            <!-- Grid Countdown Timer Elements (Days, Hours, Minutes) -->
             <div class="grid grid-cols-3 gap-4 mb-10 w-full max-w-xs">
                 <div class="bg-black/60 border border-zinc-900 rounded p-3 text-center backdrop-blur-xs">
                     <span id="countdown-days" class="heading-font text-2xl sm:text-3xl font-bold text-white block">00</span>
@@ -89,13 +88,13 @@
             </div>
 
             <!-- Call to Action Blue Button -->
-            <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs tracking-widest uppercase px-8 py-4 rounded-sm shadow-lg transition duration-200">
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs tracking-widest uppercase px-8 py-4 rounded-sm shadow-lg transition duration-200 mb-8">
                 Discover Now
             </button>
         </div>
 
-<!-- Integrated Spotify Playlist Interface (Hero Bottom) -->
-<div class="w-full bg-black/90 border-t border-zinc-900/60 backdrop-blur-md py-4 px-4 sm:px-6">
+        <!-- Integrated Spotify Playlist Interface (Hero Bottom Frame) -->
+        <div class="w-full bg-black/90 border-t border-zinc-900/60 backdrop-blur-md py-4 px-4 sm:px-6">
             <div class="max-w-6xl mx-auto flex items-center justify-center">
                 <iframe 
                     src="https://open.spotify.com/embed/playlist/YOUR_PLAYLIST_ID?utm_source=generator&theme=0" 
@@ -107,26 +106,6 @@
                     loading="lazy"
                     class="rounded-lg shadow-2xl opacity-95 hover:opacity-100 transition duration-200">
                 </iframe>
-            </div>
-        </div>                <!-- Central Control Info -->
-                <div class="flex items-center gap-4 w-full md:w-1/2">
-                    <span class="text-zinc-500 text-[10px]">VOLUME</span>
-                    <div class="h-1 bg-zinc-800 rounded-full w-full relative cursor-pointer">
-                        <div class="absolute left-0 top-0 bottom-0 w-[70%] bg-zinc-400"></div>
-                    </div>
-                    <span class="text-white font-sans text-[11px] tracking-wider whitespace-nowrap">Coming Down - <span class="text-zinc-400">Jimmy Page</span></span>
-                </div>
-
-                <!-- Actions -->
-                <div class="flex items-center gap-3">
-                    <span class="text-[10px] bg-zinc-900 px-2 py-1 rounded border border-zinc-800 text-zinc-500">100% QUALITY</span>
-                </div>
-            </div>
-        </div>
-                <!-- Actions -->
-                <div class="flex items-center gap-3">
-                    <span class="text-[10px] bg-zinc-900 px-2 py-1 rounded border border-zinc-800 text-zinc-500">100% QUALITY</span>
-                </div>
             </div>
         </div>
     </section>
@@ -200,10 +179,8 @@
         <p>© 2026 WeMusic Production. Engineered for beautiful layout setups.</p>
     </footer>
 
-<!-- Real-Time Countdown Script to August 22 -->
+    <!-- Real-Time Countdown Script to August 22 -->
     <script>
-        // Set the target date (August 22 of the current year at midnight)
-        // If you need a specific time, change "00:00:00" to something like "18:30:00"
         const currentYear = new Date().getFullYear();
         const countdownTarget = new Date(`August 22, ${currentYear} 00:00:00`).getTime();
 
@@ -211,7 +188,6 @@
             const now = new Date().getTime();
             const distance = countdownTarget - now;
 
-            // If the countdown is over, stop the timer and lock at 00
             if (distance < 0) {
                 clearInterval(updateCountdown);
                 document.getElementById('countdown-days').innerText = "00";
@@ -220,16 +196,14 @@
                 return;
             }
 
-            // Calculate time calculations for days, hours, and minutes
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-            // Push the results to the HTML, padding with a zero if under 10
             document.getElementById('countdown-days').innerText = String(days).padStart(2, '0');
             document.getElementById('countdown-hours').innerText = String(hours).padStart(2, '0');
             document.getElementById('countdown-minutes').innerText = String(minutes).padStart(2, '0');
-        }, 1000); // Updates every second behind the scenes to ensure minute flips accurately
+        }, 1000);
     </script>
 </body>
 </html>
