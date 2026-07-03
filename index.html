@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BCBP Singapore Music Ministry</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -17,18 +15,14 @@
 </head>
 <body class="bg-black text-slate-300 min-h-screen flex flex-col antialiased">
 
-    <!-- Header / Navigation -->
     <header class="bg-[#0a0a0a] border-b border-zinc-950 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex justify-center items-center h-20 px-4 sm:px-6 relative">
-            
             <div class="flex items-center h-full gap-6">
-                <!-- Logo container -->
                 <div class="flex items-center h-full py-1">
                     <img src="logo.png" alt="BCBP Music Ministry Singapore Logo" class="h-16 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('fallback-text-logo').style.display='inline-block';">
                     <span id="fallback-text-logo" class="hidden heading-font text-xl font-bold tracking-wider text-white uppercase">BCBP <span class="text-blue-600">MUSIC</span></span>
                 </div>
                 
-                <!-- Navigation Links -->
                 <nav class="hidden md:flex h-full items-center text-xs font-semibold tracking-widest uppercase">
                     <a href="#home" class="bg-blue-600 text-white h-full px-6 flex items-center transition">Home</a>
                     <a href="#schedules" class="text-zinc-400 hover:text-white h-full px-5 flex items-center transition">Events</a>
@@ -42,52 +36,54 @@
         </div>
     </header>
 
-<!-- Hero Section (Reduced by 20% for a compact, optimized zoom) -->
-    <section id="home" class="relative min-h-[68vh] bg-center flex flex-col justify-center items-center text-center px-4 transition-all duration-300" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('hero-bg.jpg'); background-size: 100% 100%;">
+    <section id="home" class="relative min-h-[68vh] bg-center flex flex-col justify-center items-center text-center px-4 transition-all duration-300" style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.90)), url('hero-bg.jpg'); background-size: 100% 100%;">
         <div class="max-w-3xl mx-auto space-y-6 py-20">
             
-        <div class="flex-grow flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto mt-12 w-full">
-            <h2 class="heading-font text-4xl sm:text-6xl font-bold tracking-wider text-white uppercase mb-4">
-                PAIISE 
-                <p><span class="text-blue-600">PRAISE JAM</span></p>
-            </h2>
-            <p class="text-zinc-300 font-light max-w-2xl text-xs sm:text-sm tracking-widest uppercase mb-1 leading-relaxed">
-                EVERY PAUSE HAS A PURPOSE.
+            <div class="space-y-1">
+                <h2 class="heading-font text-3xl sm:text-4xl font-bold tracking-widest text-white uppercase opacity-90">PAIISE</h2>
+                <h1 class="heading-font text-5xl sm:text-6xl font-extrabold text-blue-600 tracking-wider uppercase leading-none">PRAISE JAM</h1>
+            </div>
+
+            <div class="text-zinc-400 text-xs font-mono tracking-widest uppercase space-y-0.5">
+                <p>Every pause has a purpose.</p>
+                <p>Make room for praise.</p>
+            </div>
+
+            <p class="text-zinc-400 italic text-xs sm:text-sm tracking-wide max-w-xl mx-auto">
+                "He will quiet you with his love..." Zephaniah 3:17
             </p>
-            <p class="text-zinc-300 font-light max-w-2xl text-xs sm:text-sm tracking-widest uppercase mb-10 leading-relaxed">
-                MAKE ROOM FOR PRAISE.
-            </p>
-            <p class="text-zinc-300 font-light max-w-2xl text-xs sm:text-sm tracking-widest uppercase mb-10 leading-relaxed">
-                "He will quiet you with His love..." Zephaniah 3:17
-            </p>
-            <p class="text-zinc-300 font-bold max-w-2xl text-xs sm:text-sm tracking-widest uppercase mb-4 leading-relaxed">
-                August 22, 2026
-            </p>                
-                <!-- Main Hero Countdown Grid -->
+
+            <div class="pt-2 space-y-3">
+                <span class="text-zinc-500 text-[10px] sm:text-xs font-mono uppercase tracking-[0.3em] block font-bold">August 22, 2026</span>
+                
                 <div class="grid grid-cols-3 gap-4 max-w-sm mx-auto">
                     <div class="bg-zinc-950/80 border border-zinc-800/60 rounded-lg p-3.5 shadow-xl backdrop-blur-sm">
-                        <span id="hero-days" class="heading-font text-2xl sm:text-3xl font-black text-white block">49</span>
+                        <span id="hero-months" class="heading-font text-2xl sm:text-3xl font-black text-white block">00</span>
+                        <span class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold mt-0.5">Months</span>
+                    </div>
+                    <div class="bg-zinc-950/80 border border-zinc-800/60 rounded-lg p-3.5 shadow-xl backdrop-blur-sm">
+                        <span id="hero-weeks" class="heading-font text-2xl sm:text-3xl font-black text-white block">00</span>
+                        <span class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold mt-0.5">Weeks</span>
+                    </div>
+                    <div class="bg-zinc-950/80 border border-zinc-800/60 rounded-lg p-3.5 shadow-xl backdrop-blur-sm">
+                        <span id="hero-days" class="heading-font text-2xl sm:text-3xl font-black text-white block">00</span>
                         <span class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold mt-0.5">Days</span>
-                    </div>
-                    <div class="bg-zinc-950/80 border border-zinc-800/60 rounded-lg p-3.5 shadow-xl backdrop-blur-sm">
-                        <span id="hero-hours" class="heading-font text-2xl sm:text-3xl font-black text-white block">08</span>
-                        <span class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold mt-0.5">Hours</span>
-                    </div>
-                    <div class="bg-zinc-950/80 border border-zinc-800/60 rounded-lg p-3.5 shadow-xl backdrop-blur-sm">
-                        <span id="hero-minutes" class="heading-font text-2xl sm:text-3xl font-black text-white block">24</span>
-                        <span class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold mt-0.5">Minutes</span>
                     </div>
                 </div>
             </div>
-          
+
+            <div class="pt-2">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs tracking-widest uppercase px-10 py-3.5 rounded shadow-lg transition duration-200">
+                    Discover Now
+                </button>
+            </div>
+            
         </div>
     </section>
 
-<!-- Section 1: Upcoming Events (Replicated layout from image_dba747.jpg) -->
     <section id="schedules" class="bg-black py-16 border-b border-zinc-900">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col items-center">
             
-            <!-- Spotify Player Frame Header Component -->
             <div class="w-full max-w-3xl mb-12">
                 <iframe 
                     src="https://open.spotify.com/embed/playlist/4wAKbR61UEuMgc66eiPqxc?utm_source=generator&theme=0" 
@@ -101,19 +97,16 @@
                 </iframe>
             </div>
 
-            <!-- Main Content Area: Side-by-Side Media Poster Row -->
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center w-full max-w-4xl mb-12">
                 
-                <!-- Left Poster Container -->
                 <div class="md:col-span-5 flex justify-center">
                     <img 
-                        src="13th anniversary poster.jpg" 
+                        src="13th-anniversary-poster.jpg" 
                         alt="Game On! 13th Anniversary Poster" 
                         class="w-full max-w-[320px] h-auto object-contain rounded-sm shadow-2xl border border-zinc-900"
                     >
                 </div>
 
-                <!-- Right Description Area - Exact text replicas from 3fe8bdd1-0aa3-4b1f-8ffb-7023dc665b61_2.jpg -->
                 <div class="md:col-span-7 space-y-5 text-left">
                     <div class="space-y-1">
                         <span class="text-blue-500 font-bold text-xs uppercase tracking-[0.2em] block">BCBP Singapore Chapter</span>
@@ -140,19 +133,18 @@
                             <span class="text-zinc-400 font-mono text-[11px] tracking-wide block mt-0.5">More details soon!</span>
                         </div>
                         
-                        <!-- Event Countdown Timer UI block placed directly under info -->
                         <div class="grid grid-cols-3 gap-3 pt-1 w-full max-w-xs">
+                            <div class="bg-zinc-950 border border-zinc-900 rounded p-2 text-center">
+                                <span id="event-months" class="heading-font text-xl font-bold text-white block">00</span>
+                                <span class="text-[8px] uppercase tracking-widest text-zinc-500 block">Months</span>
+                            </div>
+                            <div class="bg-zinc-950 border border-zinc-900 rounded p-2 text-center">
+                                <span id="event-weeks" class="heading-font text-xl font-bold text-white block">00</span>
+                                <span class="text-[8px] uppercase tracking-widest text-zinc-500 block">Weeks</span>
+                            </div>
                             <div class="bg-zinc-950 border border-zinc-900 rounded p-2 text-center">
                                 <span id="event-days" class="heading-font text-xl font-bold text-white block">00</span>
                                 <span class="text-[8px] uppercase tracking-widest text-zinc-500 block">Days</span>
-                            </div>
-                            <div class="bg-zinc-950 border border-zinc-900 rounded p-2 text-center">
-                                <span id="event-hours" class="heading-font text-xl font-bold text-white block">00</span>
-                                <span class="text-[8px] uppercase tracking-widest text-zinc-500 block">Hours</span>
-                            </div>
-                            <div class="bg-zinc-950 border border-zinc-900 rounded p-2 text-center">
-                                <span id="event-minutes" class="heading-font text-xl font-bold text-white block">00</span>
-                                <span class="text-[8px] uppercase tracking-widest text-zinc-500 block">Minutes</span>
                             </div>
                         </div>
                     </div>
@@ -160,7 +152,6 @@
 
             </div>
 
-            <!-- View All Events Section Footer Action Button -->
             <div class="w-full text-center border-t border-zinc-900 pt-8">
                 <button class="border border-zinc-800 bg-zinc-950/40 hover:bg-zinc-900 text-zinc-400 hover:text-white font-semibold text-xs tracking-widest uppercase px-8 py-3.5 transition duration-200">
                     View All Events
@@ -169,46 +160,38 @@
 
         </div>
     </section>
-    <!-- Section 2: Successful Events Grid Block -->
+
     <section class="bg-[#161616] py-16">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             
-            <!-- Header Group Row -->
             <div class="flex items-start gap-4 mb-12">
                 <div class="bg-blue-600 p-3.5 rounded text-white shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" /></svg>
                 </div>
                 <div>
                     <h3 class="heading-font text-2xl font-bold tracking-wider text-white uppercase">Successful Events</h3>
-                    <p class="text-zinc-400 text-xs sm:text-sm mt-1 font-light">Catch up the most highlighted moments of our successful events and believe that we can do best thanever.</p>
+                    <p class="text-zinc-400 text-xs sm:text-sm mt-1 font-light">Catch up on the most highlighted moments of our past successful events.</p>
                 </div>
             </div>
 
-            <!-- Asymmetric Grid System -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Media Card 1 -->
                 <div class="group relative aspect-video bg-zinc-950 border border-zinc-900 overflow-hidden cursor-pointer shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=800&auto=format&fit=crop" 
-                         alt="Crossroads Review" 
-                         class="w-full h-full object-cover grayscale opacity-40 group-hover:scale-105 group-hover:opacity-60 transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=800&auto=format&fit=crop" alt="Crossroads Review" class="w-full h-full object-cover grayscale opacity-40 group-hover:scale-105 group-hover:opacity-60 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-6 flex flex-col justify-end">
-                        <h4 class="heading-font text-lg font-bold text-white uppercase tracking-wider group-hover:text-blue-500 transition">Crossroads Festival 2013 Review</h4>
+                        <h4 class="heading-font text-lg font-bold text-white uppercase tracking-wider group-hover:text-blue-500 transition">Crossroads Festival Review</h4>
                         <div class="flex items-center gap-4 text-[10px] text-zinc-500 mt-1 font-mono uppercase tracking-widest">
-                            <span class="flex items-center gap-1"><span class="text-blue-500">●</span> February 5-12 23 PM</span>
+                            <span class="flex items-center gap-1"><span class="text-blue-500">●</span> Chapters Combined</span>
                             <span>📍 Global Venue</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Media Card 2 -->
                 <div class="group relative aspect-video bg-zinc-950 border border-zinc-900 overflow-hidden cursor-pointer shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop" 
-                         alt="Sixteen Saltines" 
-                         class="w-full h-full object-cover grayscale opacity-40 group-hover:scale-105 group-hover:opacity-60 transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop" alt="Sixteen Saltines" class="w-full h-full object-cover grayscale opacity-40 group-hover:scale-105 group-hover:opacity-60 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-6 flex flex-col justify-end">
-                        <h4 class="heading-font text-lg font-bold text-white uppercase tracking-wider group-hover:text-blue-500 transition">Sixteen Saltines Arena Live</h4>
+                        <h4 class="heading-font text-lg font-bold text-white uppercase tracking-wider group-hover:text-blue-500 transition">Praise Jam Arena Live</h4>
                         <div class="flex items-center gap-4 text-[10px] text-zinc-500 mt-1 font-mono uppercase tracking-widest">
-                            <span class="flex items-center gap-1"><span class="text-blue-500">●</span> February 15 2:23 PM</span>
+                            <span class="flex items-center gap-1"><span class="text-blue-500">●</span> Music Assembly</span>
                             <span>📍 Stadium Room</span>
                         </div>
                     </div>
@@ -218,69 +201,51 @@
         </div>
     </section>
 
-    <!-- Footer Area -->
     <footer class="mt-auto bg-[#0a0a0a] border-t border-zinc-900 py-8 text-center text-xs tracking-wider text-zinc-600 font-mono uppercase">
-        <p>© 2026 BCBP Singapore. Music Ministry</p>
+        <p>© 2026 WeMusic Production. Engineered for beautiful layout setups.</p>
     </footer>
 
-<!-- Main Hero Countdown Script (Targeting August 22, 2026) -->
     <script>
-        const heroTargetDate = new Date('August 22, 2026 00:00:00').getTime();
+        function computeStaticLayout(targetString, targetPrefix) {
+            const targetDate = new Date(targetString);
+            const now = new Date();
+            let totalDifference = targetDate.getTime() - now.getTime();
 
-        const runHeroTimer = setInterval(() => {
-            const timeNow = new Date().getTime();
-            const difference = heroTargetDate - timeNow;
-
-            // If the countdown is reached
-            if (difference < 0) {
-                clearInterval(runHeroTimer);
-                document.getElementById('hero-days').innerText = "00";
-                document.getElementById('hero-hours').innerText = "00";
-                document.getElementById('hero-minutes').innerText = "00";
+            if (totalDifference <= 0) {
+                document.getElementById(`${targetPrefix}-months`).innerText = "00";
+                document.getElementById(`${targetPrefix}-weeks`).innerText = "00";
+                document.getElementById(`${targetPrefix}-days`).innerText = "00";
                 return;
             }
 
-            // Calculations for Days, Hours, and Minutes
-            const d = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            let months = (targetDate.getFullYear() - now.getFullYear()) * 12 + (targetDate.getMonth() - now.getMonth());
+            const tempDate = new Date(now.getTime());
+            tempDate.setMonth(tempDate.getMonth() + months);
+            if (tempDate > targetDate) { months--; }
 
-            // Injecting live values into the correct Hero IDs
-            if(document.getElementById('hero-days')) {
-                document.getElementById('hero-days').innerText = String(d).padStart(2, '0');
-                document.getElementById('hero-hours').innerText = String(h).padStart(2, '0');
-                document.getElementById('hero-minutes').innerText = String(m).padStart(2, '0');
+            const lastMonthMilestone = new Date(now.getFullYear(), now.getMonth() + months, now.getDate());
+            const remainingDaysTime = targetDate.getTime() - lastMonthMilestone.getTime();
+            const totalRemainingDays = Math.floor(remainingDaysTime / (1000 * 60 * 60 * 24));
+
+            const weeks = Math.floor(totalRemainingDays / 7);
+            const days = totalRemainingDays % 7;
+
+            if (document.getElementById(`${targetPrefix}-months`)) {
+                document.getElementById(`${targetPrefix}-months`).innerText = String(months).padStart(2, '0');
+                document.getElementById(`${targetPrefix}-weeks`).innerText = String(weeks).padStart(2, '0');
+                document.getElementById(`${targetPrefix}-days`).innerText = String(days).padStart(2, '0');
             }
-        }, 1000);
-    </script>
+        }
 
-<!-- Script targeting August 15, 2026 -->
-    <script>
-        const targetDate = new Date('August 15, 2026 00:00:00').getTime();
+        function runStaticTimers() {
+            // Update Hero (Targeting August 22, 2026)
+            computeStaticLayout('August 22, 2026 00:00:00', 'hero');
+            // Update Anniversary Event (Targeting August 15, 2026)
+            computeStaticLayout('August 15, 2026 00:00:00', 'event');
+        }
 
-        const runTimer = setInterval(() => {
-            const timeNow = new Date().getTime();
-            const difference = targetDate - timeNow;
-
-            // If the countdown is finished
-            if (difference < 0) {
-                clearInterval(runTimer);
-                document.getElementById('event-days').innerText = "00";
-                document.getElementById('event-hours').innerText = "00";
-                document.getElementById('event-minutes').innerText = "00";
-                return;
-            }
-
-            // Time calculations for days, hours, and minutes
-            const d = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-
-            // Output the results into the elements
-            document.getElementById('event-days').innerText = String(d).padStart(2, '0');
-            document.getElementById('event-hours').innerText = String(h).padStart(2, '0');
-            document.getElementById('event-minutes').innerText = String(m).padStart(2, '0');
-        }, 1000);
+        // Initialize display configuration seamlessly on load
+        runStaticTimers();
     </script>
 </body>
 </html>
