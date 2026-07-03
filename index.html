@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BCBP Singapore Music Ministry</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -15,15 +17,18 @@
 </head>
 <body class="bg-black text-slate-300 min-h-screen flex flex-col antialiased">
 
+    <!-- Header / Navigation -->
     <header class="bg-[#0a0a0a] border-b border-zinc-950 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex justify-center items-center h-20 px-4 sm:px-6 relative">
             
             <div class="flex items-center h-full gap-6">
+                <!-- Logo container -->
                 <div class="flex items-center h-full py-1">
                     <img src="logo.png" alt="BCBP Music Ministry Singapore Logo" class="h-16 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('fallback-text-logo').style.display='inline-block';">
                     <span id="fallback-text-logo" class="hidden heading-font text-xl font-bold tracking-wider text-white uppercase">BCBP <span class="text-blue-600">MUSIC</span></span>
                 </div>
                 
+                <!-- Navigation Links -->
                 <nav class="hidden md:flex h-full items-center text-xs font-semibold tracking-widest uppercase">
                     <a href="#home" class="bg-blue-600 text-white h-full px-6 flex items-center transition">Home</a>
                     <a href="#schedules" class="text-zinc-400 hover:text-white h-full px-5 flex items-center transition">Events</a>
@@ -34,11 +39,13 @@
                     <a href="#contact" class="text-zinc-400 hover:text-white h-full px-5 flex items-center transition">Contact</a>
                 </nav>
             </div>
-            </div>
+        </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="relative min-h-[90vh] bg-cover bg-center flex flex-col justify-between" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('hero-bg.jpg');">
         
+        <!-- Hero Middle Main Content -->
         <div class="flex-grow flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto mt-12 w-full">
             <h2 class="heading-font text-4xl sm:text-6xl font-bold tracking-wider text-white uppercase mb-4">
                 PAIISE 
@@ -57,6 +64,7 @@
                 August 22, 2026
             </p>
 
+            <!-- Grid Countdown Timer Elements (Days, Hours, Minutes) -->
             <div class="grid grid-cols-3 gap-4 mb-10 w-full max-w-xs">
                 <div class="bg-black/60 border border-zinc-900 rounded p-3 text-center backdrop-blur-xs">
                     <span id="countdown-days" class="heading-font text-2xl sm:text-3xl font-bold text-white block">00</span>
@@ -72,15 +80,18 @@
                 </div>
             </div>
 
+            <!-- Call to Action Blue Button -->
             <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs tracking-widest uppercase px-8 py-4 rounded-sm shadow-lg transition duration-200 mb-8">
                 Discover Now
             </button>
         </div>
 
+        <!-- Integrated Spotify Playlist Interface (Hero Bottom Frame) -->
         <div class="w-full bg-black/90 border-t border-zinc-900/60 backdrop-blur-md py-4 px-4 sm:px-6">
-            <div class="max-w-6xl mx-auto flex items-center justify-center">
+            <!-- Compact Wrapper Added: Centered with max-w-2xl -->
+            <div class="max-w-2xl mx-auto w-full flex items-center justify-center">
                 <iframe 
-                    src="https://open.spotify.com/embed/playlist/YOUR_PLAYLIST_ID?utm_source=generator&theme=0" 
+                    src="https://open.spotify.com/embed/playlist/4wAKbR61UEuMgc66eiPqxc?utm_source=generator&theme=0" 
                     width="100%" 
                     height="180" 
                     frameBorder="0" 
@@ -93,6 +104,7 @@
         </div>
     </section>
 
+    <!-- Section 1: Upcoming Events -->
     <section id="schedules" class="bg-black py-20 border-b border-zinc-900">
         <div class="max-w-4xl mx-auto text-center px-4">
             <h3 class="heading-font text-3xl font-bold tracking-widest text-white uppercase mb-4">
@@ -107,9 +119,11 @@
         </div>
     </section>
 
+    <!-- Section 2: Successful Events Grid Block -->
     <section class="bg-[#161616] py-16">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             
+            <!-- Header Group Row -->
             <div class="flex items-start gap-4 mb-12">
                 <div class="bg-blue-600 p-3.5 rounded text-white shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" /></svg>
@@ -120,7 +134,9 @@
                 </div>
             </div>
 
+            <!-- Asymmetric Grid System -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Media Card 1 -->
                 <div class="group relative aspect-video bg-zinc-950 border border-zinc-900 overflow-hidden cursor-pointer shadow-lg">
                     <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=800&auto=format&fit=crop" 
                          alt="Crossroads Review" 
@@ -134,6 +150,7 @@
                     </div>
                 </div>
 
+                <!-- Media Card 2 -->
                 <div class="group relative aspect-video bg-zinc-950 border border-zinc-900 overflow-hidden cursor-pointer shadow-lg">
                     <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop" 
                          alt="Sixteen Saltines" 
@@ -151,10 +168,12 @@
         </div>
     </section>
 
+    <!-- Footer Area -->
     <footer class="mt-auto bg-[#0a0a0a] border-t border-zinc-900 py-8 text-center text-xs tracking-wider text-zinc-600 font-mono uppercase">
         <p>© 2026 WeMusic Production. Engineered for beautiful layout setups.</p>
     </footer>
 
+    <!-- Real-Time Countdown Script to August 22 -->
     <script>
         const currentYear = new Date().getFullYear();
         const countdownTarget = new Date(`August 22, ${currentYear} 00:00:00`).getTime();
