@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BCBP Singapore Music Ministry</title>
@@ -42,10 +42,10 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative min-h-[90vh] bg-cover bg-center flex flex-col justify-between" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('hero-bg.jpg');">
-        
-        <!-- Hero Middle Main Content -->
+<!-- Hero Section (Reduced by 20% for a compact, optimized zoom) -->
+    <section id="home" class="relative min-h-[68vh] bg-center flex flex-col justify-center items-center text-center px-4 transition-all duration-300" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('hero-bg.jpg'); background-size: 100% 100%;">
+        <div class="max-w-3xl mx-auto space-y-6 py-20">
+            
         <div class="flex-grow flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto mt-12 w-full">
             <h2 class="heading-font text-4xl sm:text-6xl font-bold tracking-wider text-white uppercase mb-4">
                 PAIISE 
@@ -62,29 +62,26 @@
             </p>
             <p class="text-zinc-300 font-bold max-w-2xl text-xs sm:text-sm tracking-widest uppercase mb-4 leading-relaxed">
                 August 22, 2026
-            </p>
-
-            <!-- Grid Countdown Timer Elements (Days, Hours, Minutes) -->
-            <div class="grid grid-cols-3 gap-4 mb-10 w-full max-w-xs">
-                <div class="bg-black/60 border border-zinc-900 rounded p-3 text-center backdrop-blur-xs">
-                    <span id="countdown-days" class="heading-font text-2xl sm:text-3xl font-bold text-white block">00</span>
-                    <span class="text-[9px] uppercase font-bold tracking-widest text-blue-500 block mt-1">Days</span>
-                </div>
-                <div class="bg-black/60 border border-zinc-900 rounded p-3 text-center backdrop-blur-xs">
-                    <span id="countdown-hours" class="heading-font text-2xl sm:text-3xl font-bold text-white block">00</span>
-                    <span class="text-[9px] uppercase font-bold tracking-widest text-blue-500 block mt-1">Hours</span>
-                </div>
-                <div class="bg-black/60 border border-zinc-900 rounded p-3 text-center backdrop-blur-xs">
-                    <span id="countdown-minutes" class="heading-font text-2xl sm:text-3xl font-bold text-white block">00</span>
-                    <span class="text-[9px] uppercase font-bold tracking-widest text-blue-500 block mt-1">Minutes</span>
+            </p>                
+                <!-- Main Hero Countdown Grid -->
+                <div class="grid grid-cols-3 gap-4 max-w-sm mx-auto">
+                    <div class="bg-zinc-950/80 border border-zinc-800/60 rounded-lg p-3.5 shadow-xl backdrop-blur-sm">
+                        <span id="hero-days" class="heading-font text-2xl sm:text-3xl font-black text-white block">49</span>
+                        <span class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold mt-0.5">Days</span>
+                    </div>
+                    <div class="bg-zinc-950/80 border border-zinc-800/60 rounded-lg p-3.5 shadow-xl backdrop-blur-sm">
+                        <span id="hero-hours" class="heading-font text-2xl sm:text-3xl font-black text-white block">08</span>
+                        <span class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold mt-0.5">Hours</span>
+                    </div>
+                    <div class="bg-zinc-950/80 border border-zinc-800/60 rounded-lg p-3.5 shadow-xl backdrop-blur-sm">
+                        <span id="hero-minutes" class="heading-font text-2xl sm:text-3xl font-black text-white block">24</span>
+                        <span class="text-[9px] uppercase tracking-widest text-zinc-500 block font-bold mt-0.5">Minutes</span>
+                    </div>
                 </div>
             </div>
-
-            <!-- Call to Action Blue Button -->
-            <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs tracking-widest uppercase px-8 py-4 rounded-sm shadow-lg transition duration-200 mb-8">
-                Discover Now
-            </button>
+          
         </div>
+    </section>
 
 <!-- Section 1: Upcoming Events (Replicated layout from image_dba747.jpg) -->
     <section id="schedules" class="bg-black py-16 border-b border-zinc-900">
@@ -223,7 +220,7 @@
 
     <!-- Footer Area -->
     <footer class="mt-auto bg-[#0a0a0a] border-t border-zinc-900 py-8 text-center text-xs tracking-wider text-zinc-600 font-mono uppercase">
-        <p>© 2026 WeMusic Production. Engineered for beautiful layout setups.</p>
+        <p>© 2026 BCBP Singapore. Music Ministry</p>
     </footer>
 
     <!-- Real-Time Countdown Script to August 22 -->
